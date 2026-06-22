@@ -19,3 +19,4 @@ A responsive Weather Dashboard built using HTML, CSS, JavaScript, and OpenWeathe
 * CSS
 * JavaScript
 * OpenWeatherMap API
+
