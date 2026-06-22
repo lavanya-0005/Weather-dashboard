@@ -1,0 +1,162 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+width:500px;
+max-width:95%;
+text-align:center;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+h1{
+font-size:28px;
+}
+
+#themeBtn{
+padding:8px 12px;
+font-size:12px;
+margin-top:0;
+}
+
+.search-box{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:15px;
+}
+
+.search-box input{
+flex:1;
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:16px;
+}
+
+.search-box button{
+padding:10px 15px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+background:#2196f3;
+color:white;
+}
+
+button{
+padding:10px 15px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+#locationBtn{
+display:block;
+margin:15px auto;
+background:#4caf50;
+color:white;
+}
+
+#weather{
+margin-top:20px;
+text-align:center;
+}
+
+#weather img{
+display:block;
+margin:10px auto;
+}
+
+#forecast{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.forecast-card{
+    background:#f0f0f0;
+    padding:10px;
+    border-radius:10px;
+    width:80px;
+    text-align:center;
+}
+
+.forecast-card img{
+    width:40px;
+    height:40px;
+}
+
+.dark .forecast-card{
+    background:#333;
+    color:white;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .container{
+background:#1e1e1e;
+color:white;
+box-shadow:0 4px 15px rgba(255,255,255,0.1);
+}
+
+.dark input{
+background:#333;
+color:white;
+border:1px solid #555;
+}
+
+.dark #themeBtn{
+background:#444;
+color:white;
+}
+
+.dark #locationBtn{
+background:#2e7d32;
+}
+
+@media(max-width:500px){
+
+.container{
+    width:100%;
+}
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box button{
+    width:100%;
+}
+
+}
